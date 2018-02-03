@@ -1,0 +1,14 @@
+// Search for game objects with a tag that is not used
+
+function Start () {
+    var gos : GameObject[];
+    gos = GameObject.FindGameObjectsWithTag("fred");
+
+    if (gos.length == 0) {
+        Debug.Log("No game objects are tagged with fred");
+    }
+}
+
+
+// This is an example of 'GameObject.FindGameObjectsWithTag'
+// https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
