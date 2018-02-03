@@ -1,0 +1,15 @@
+// How to make a code run in every 10 frames not every frame?
+
+private int frames = 0;
+ 
+ void Update() {
+     frames++;
+     if (frames % 10 == 0) 
+     { 
+         //If the remainder of the current frame divided by 10 is 0 run the function.
+         Frame10Update();
+     }
+ }
+ 
+ 
+ // https://answers.unity.com/questions/917461/how-to-make-a-code-run-in-every-10-frame-not-every.html
